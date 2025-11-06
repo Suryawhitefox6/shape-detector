@@ -12,7 +12,7 @@ export const testImages = {
   "triangle_basic.png": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjEwMCwzMCAyNSwxNjAgMTc1LDE2MCIgZmlsbD0iYmxhY2siLz4KPC9zdmc+"
 };
 
-export function loadTestImage(imageName) {
+export function loadTestImage(imageName: keyof typeof testImages): string {
     return testImages[imageName];
 }
 
